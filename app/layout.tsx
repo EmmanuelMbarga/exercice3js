@@ -44,9 +44,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${alpino.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${alpino.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="overflow-x-hidden bg-yellow-300">
           <Header />
         <main>
           {children}

@@ -1,29 +1,13 @@
 @import "tailwindcss";
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #fffbfb;
-} */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-alpino: var(--font-alpino);
-  --font-mono: var(--font-geist-mono);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #faf8f8;
-    --foreground: #ededed;
-  }
-} */
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-alpino), Arial, Helvetica, sans-serif;
-}
+
+/* KEYFRAMES */
 @keyframes slide-left {
   0% {
     transform: translateX(0);
@@ -34,7 +18,7 @@ body {
   }
 }
 
-/* utilitaire pour l'effet de vague */
+/* UTILITIES */
 @layer utilities {
   .animate-slide-left {
     animation: slide-left 3s linear infinite;
@@ -43,4 +27,11 @@ body {
   .animate-spin-slow {
     animation: spin 6s linear infinite;
   }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-alpino), Arial, Helvetica, sans-serif;
 }

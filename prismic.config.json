@@ -1,0 +1,9 @@
+{
+  "repositoryName": "exercice3js",
+  "routes": [
+    {
+      "type": "home",
+      "path": "/home/:uid"
+    }
+  ]
+}

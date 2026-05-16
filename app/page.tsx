@@ -4,6 +4,8 @@ import Section2 from "@/components/section2";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { View } from "@react-three/drei";
+import Scenario1 from "@/components/scenarios/scenario1";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -82,6 +84,9 @@ export default function Home() {
 
   return (
     <div className="mx-auto max-w-7xl flex flex-col items-center w-full hero opacity-0">
+      <View className="hero-scene pointer-events-none sticky top-0 z-59 -mt-[100vh] hidden h-screen w-screen md:block">
+        <Scenario1/>
+      </View>
       <Section1 />
       <Section2 />
     </div>

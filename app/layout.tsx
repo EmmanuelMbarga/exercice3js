@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import ViewCanvas from "@/components/viewCanvas";
 
 const alpino = localFont({
   src: [
@@ -50,6 +51,7 @@ export default function RootLayout({
           <Header />
         <main>
           {children}
+          <ViewCanvas/>
         </main>
       </body>
     </html>
